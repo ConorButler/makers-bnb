@@ -47,12 +47,12 @@ class Makersbnb < Sinatra::Base
 
   post "/user/login" do
     user = User.log_in(email: params[:email], password: params[:password])
-    unless user
+    unless user == true
       flash[:notice] = "Password did not match, please try again"
-      redirect(:'user/login')
+      redirect('/user/login')
     else
       session[:user_id] = user.id
-      redirect "/"
+      redirect ('/')
     end
   end
 
@@ -89,7 +89,6 @@ class Makersbnb < Sinatra::Base
 
   get "/listings/bnb/:id" do
     @bnb = Bnb.find(id: params[:id])
-    @bookings = Booking.find_by_bnb(bnb_id: params[:id]) if @user
     erb :'listings/bnb'
   end
 
