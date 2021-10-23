@@ -44,10 +44,8 @@ class Search
         bnb_id: result["id"], name: result["name"], location: result["location"],
         price: result["price"], description: result["description"], user_id: result["user_id"]
       )
-    end
+    end.select { |bnb| Bnb.available?(bnb_id: bnb.bnb_id, start_date: start_date, end_date: end_date) }
 
-    bnbs.select do |bnb|
-      Bnb.available?(bnb_id: bnb.bnb_id, start_date: start_date, end_date: end_date)
-    end
+    bnbs.empty? ? nil : bnbs
   end
 end

@@ -1,24 +1,24 @@
-<div class="container w-50 my-5">
-  <div class="row w-80">
+<div class="container w-100 my-5">
+  <div class="row w-100">
     <form id='form' action="/search" method="GET" class="input-group">
 
       <div class="col-2 px-1 mx-auto">
         <label for="Start" class="form-label">Start date:</label>
-        <input type="text" placeholder="I'm flexible" onfocus="(this.type='date')" onblur="(this.type='text')" name="start_date" id="Start" class="form-control" value="<%= params[:start_date] %>">
+        <input type="text" placeholder="I'm flexible" onfocus="(this.type='date')" onblur="(this.type='date')" name="start_date" id="Start" class="form-control" value="<%= params[:start_date] %>">
       </div>
 
       <div class="col-2 px-1 mx-auto">
         <label for="End" class="form-label">End date:</label>
-        <input type="text" placeholder="I'm flexible" onfocus="(this.type='date')" onblur="(this.type='text')" name="end_date" id="End" class="form-control" value="<%= params[:end_date] %>">
+        <input type="text" placeholder="I'm flexible" onfocus="(this.type='date')" onblur="(this.type='date')" name="end_date" id="End" class="form-control" value="<%= params[:end_date] %>">
       </div>
 
-      <div class="col-2 px-1 mx-auto">
+      <div class="col-1 px-1 mx-auto">
         <label for="min_price" class="form-label">Min price:</label>
         <input type="number" name="min_price" id="min_price" class="form-control" 
         min=0 value="<%= params[:min_price] %>" placeholder="£" >
       </div>
 
-      <div class="col-2 px-1 mx-auto">
+      <div class="col-1 px-1 mx-auto">
         <label for="max_price" class="form-label">Max price: </label>
         <input type="number" name="max_price" id="max_price" class="form-control" 
         min=0 value="<%= params[:max_price] %>" placeholder="£">
