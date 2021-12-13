@@ -40,7 +40,7 @@
 
 ### User books a bnb and gets a confirmation message
 
-![Booking confirmation](https://i.gyazo.com/8c26bf2c0b69a9c7b34f0ef4d0d02854.gif)
+![Booking confirmation](gifs/booking_confirmation.gif)
 
 ### The calendar now updates to show this date period blocked out
 
