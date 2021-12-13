@@ -2,7 +2,7 @@
 
 ![Homepage](https://i.gyazo.com/f139543830828125a449553a73d90427.jpg)
 
-## A Ruby and Sinatra Airbnb clone built in 5 days. Uses raw SQL to interact with a Postgresq database, and Bootstrap for styling. Supports signing up as a host or guest, where hosts can post bnb listings and guests can book them (hosts can also book them too).
+### A Ruby and Sinatra Airbnb clone built in 5 days. Uses raw SQL to interact with a Postgresql database, and Bootstrap for styling. Supports signing up as a host or guest, where hosts can post bnb listings and guests can book them (hosts can also book them too).
 
 # Demo
 
